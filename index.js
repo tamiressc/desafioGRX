@@ -1,14 +1,19 @@
-const http = require('http');
+const express = require('express');
+const app = express();
+const path = require('path');
+const router = express.Router();
 
-const hostName = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Servidor rodando!');
-});
-
-server.listen(port, hostName, () => {
-    console.log('servidor rodando');
+//página incial com o formulário
+router.get('/', function(req, res){
+    res.sendFile(path.join(__dirname + '/index.html'));
 })
+
+//pagina com os resultados da coleta
+router.get('/results', function(req, res){
+    res.sendFile(path.join(__dirname + '/results.html'));
+})
+
+app.use('/', router);
+app.listen(process.env.port || 3000);
+
+console.log('server is running on port 3000');
