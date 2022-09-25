@@ -128,10 +128,22 @@ select {
     padding: 0.4rem;
     margin: 8px;
     border-radius: 5px;
+    min-width: 20vh;
+    font-weight: 300;
+}
+
+#main-score {
+   margin-bottom: 1rem;
+   font-weight: 500;
 }
 
 .positive-scores, .negative-scores, .neutral-scores {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.result-text {
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
 }
