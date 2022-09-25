@@ -3,6 +3,8 @@ const app = express();
 const path = require('path');
 const router = express.Router();
 
+app.use(express.static(__dirname + '/public'));
+
 //página incial com o formulário
 router.get('/', function(req, res){
     res.sendFile(path.join(__dirname + '/index.html'));
@@ -10,7 +12,7 @@ router.get('/', function(req, res){
 
 //pagina com os resultados da coleta
 router.get('/results', function(req, res){
-    res.sendFile(path.join(__dirname + '/results.html'));
+    res.sendFile(path.join(__dirname + '/public/results.html'));
 })
 
 app.use('/', router);

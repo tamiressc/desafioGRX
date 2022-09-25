@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Coleta GRX</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <div id="form-box">
+            <h2 class="title">Desafio Coleta - GRX</h2>
+            <form action="">
+                <div class="question-text">
+                    <p class="question">Você se considera bom em lógica?</p>
+                    <div class="radio-group">
+                        <input type="radio" class="radio-input" id="sim1" name="radio-group-1" value="sim" required>
+                        <label class="radio-btn" for="sim1">Sim</label>
+                        <input type="radio" class="radio-input" id="nao1" name="radio-group-1" value="nao" required>
+                        <label class="radio-btn" for="nao1">Não</label>
+                    </div>
+                </div>    
+                <div class="question-text">
+                    <p class="question">Você gosta de aprender com desafios?</p>
+                    <div class="radio-group">
+                        <input type="radio" class="radio-input" id="sim2" name="radio-group-2" value="sim" required>
+                        <label class="radio-btn" for="sim2">Sim</label>
+                        <input type="radio" class="radio-input" id="nao2" name="radio-group-2" value="nao" required>
+                        <label class="radio-btn" for="nao2">Não</label>
+                    </div>
+                </div>    
+                <div class="question-text">
+                    <label class="question" for="options">Gostaria de fazer parte da GRX?</p>
+                        <select id="options" class="select-box">
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                            <option value="nao-sei">Não sei</option>
+                            <option value="agora">Agora!!!</option>
+                        </select>
+                </div>
+                <div class="question-text">
+                    <p class="question">Por favor, justifique sua resposta anterior</p>
+                    <div class="text-box">
+                        <textarea cols="40" rows="4" id="text-area" placeholder="Digite aqui" name="message" minlength="15" maxlength="200" required></textarea>
+                    </div>
+                </div>    
+                <input id="submit-btn" type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>    
+</body>
+</html>
