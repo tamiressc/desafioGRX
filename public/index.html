@@ -7,8 +7,6 @@
     <title>Desafio Coleta GRX</title>
 
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="js/main.js"></script>
-
 </head>
 <body>
     <main class="container">
@@ -45,13 +43,14 @@
                 <div class="question-text">
                     <p class="question">Por favor, justifique sua resposta anterior</p>
                     <div class="text-box">
-                        <textarea id="text-area" cols="40" rows="4" placeholder="Digite aqui (entre 15-200 caracteres)" name="message" minlength="15" maxlength="200" required></textarea>
-                            <span id="character-number" class="character-countdown">200/200</span>
+                        <textarea id="text-area" placeholder="Digite aqui (entre 15-200 caracteres)" name="message" minlength="15" maxlength="200" required></textarea>
                     </div>
+                    <span id="character-number" class="character-countdown">200/200</span>
                 </div>    
-                <input id="submit-btn" type="submit" value="Enviar">
+                <button id="submit-btn" type="submit">Enviar</button>
             </form>
         </div>
-    </main>    
+    </main>  
+    <script type="text/javascript" src="js/main.js"></script>  
 </body>
 </html>

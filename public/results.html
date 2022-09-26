@@ -7,39 +7,39 @@
     <title>Resultados</title>
 
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="results.js"></script>
+    <script type="text/javascript" src="js/results.js"></script>
 
 </head>
 <body>
     <main class="container">
         <h2 class="title">Pontuação Final</h2>
         <div class="total-box">
-            <div class="score-point-box" id="main-score">pontos</div>
+            <div class="score-point-box" id="main-score">points</div>
         </div>
         <div class="score-grid">
-            <div class="result-text">
-                <label for="positive-score">Positivos</label>
-                <label for="positive-percentage">% Positiva</label>
+            <div class="result-text" id="first-score-text">
+                <label for="positive-score">score</label>
+                <label for="positive-percentage">%</label>
             </div>
-            <div class="positive-scores">
-                <div id="positive-score" class="score-point-box">positivos</div>
-                <div id="positive-percentage" class="score-point-box">positivo %</div>
+            <div id="first-scores">
+                <div id="positive-score" class="score-point-box">score</div>
+                <div id="positive-percentage" class="score-point-box">%</div>
             </div>
-            <div class="result-text">
-                <label for="negative-score">Negativos</label>
-                <label for="negative-percentage">% Negativa</label>
+            <div class="result-text" id="second-score-text">
+                <label for="negative-score">score</label>
+                <label for="negative-percentage">%</label>
             </div>
-            <div class="negative-scores">
-                <div id="negative-score" class="score-point-box">negativos</div>
-                <div id="negative-percentage" class="score-point-box">negativo %</div>
+            <div id="second-scores">
+                <div id="negative-score" class="score-point-box">score</div>
+                <div id="negative-percentage" class="score-point-box">%</div>
             </div>
-            <div class="result-text">
-                <label for="neutral-score">Neutros</label>
-                <label for="neutral-percentage">% Neutra</label>
+            <div class="result-text" id="third-score-text">
+                <label for="neutral-score">score</label>
+                <label for="neutral-percentage">% </label>
             </div>
-            <div class="neutral-scores">
-                <div id="neutral-score" class="score-point-box">não avaliados</div>
-                <div id="neutral-percentage" class="score-point-box">não avaliado %</div>
+            <div id="third-scores">
+                <div id="neutral-score" class="score-point-box">score</div>
+                <div id="neutral-percentage" class="score-point-box">%</div>
             </div>
         </div>
     </main>   

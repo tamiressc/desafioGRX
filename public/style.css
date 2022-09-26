@@ -145,7 +145,7 @@ select {
    font-weight: 500;
 }
 
-.positive-scores, .negative-scores, .neutral-scores {
+#first-scores, #second-scores, #third-scores {
     display: flex;
     justify-content: space-between;
 }
