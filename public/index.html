@@ -7,12 +7,14 @@
     <title>Desafio Coleta GRX</title>
 
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
     <main class="container">
         <div id="form-box">
             <h2 class="title">Desafio Coleta - GRX</h2>
-            <form action="">
+            <form action="/results" method="POST">
                 <div class="question-text">
                     <p class="question">Você se considera bom em lógica?</p>
                     <div class="radio-group">
@@ -43,7 +45,8 @@
                 <div class="question-text">
                     <p class="question">Por favor, justifique sua resposta anterior</p>
                     <div class="text-box">
-                        <textarea cols="40" rows="4" id="text-area" placeholder="Digite aqui" name="message" minlength="15" maxlength="200" required></textarea>
+                        <textarea id="text-area" cols="40" rows="4" placeholder="Digite aqui (entre 15-200 caracteres)" name="message" minlength="15" maxlength="200" required></textarea>
+                            <span id="character-number" class="character-countdown">200/200</span>
                     </div>
                 </div>    
                 <input id="submit-btn" type="submit" value="Enviar">
